@@ -13,10 +13,10 @@
         label(for='username') User Name :
         input#name.form-control(type='text', value=user.username name='username')
       div.form-group
-        label(for='firstUnit') Unit One:
-        input#email.form-control(type='number', value=user.firstUnit name='firstUnit')
+        label(for='firstUnit') Unit One Score:
+        input#email.form-control(type='number', value=user.firstUnit name='firstUnit' min = 0 max = 100)
       div.form-group
-        label(for='secondUnit') Unit Two:
-        input#email.form-control(type='number', value=user.secondUnit name='secondUnit')
+        label(for='secondUnit') Unit Two Score:
+        input#email.form-control(type='number', value=user.secondUnit name='secondUnit' min=0 max = 100)
       button.btn.btn-primary(type='submit') Modify User Info
       a(href='./delete/' + user._id) Delete Record
