@@ -1,0 +1,22 @@
+.row
+  .col-md-6.col-md-offset-3
+    if flashMsg.length > 0
+          .alert.alert-danger <strong>FLASH!</strong>#{flashMsg}
+    p User:  #{user.username}
+    p Unit One Result: #{user.firstUnit}
+    p Unit Two Result: #{user.secondUnit}
+    Uploaded: #{user.createdAt}
+    img(src=user.imageurl, width="250")
+
+    form(method='POST' action="/users/"+user._id)
+      div.form-group
+        label(for='username') User Name :
+        input#name.form-control(type='text', value=user.username name='username')
+      div.form-group
+        label(for='firstUnit') Unit One:
+        input#email.form-control(type='number', value=user.firstUnit name='firstUnit')
+      div.form-group
+        label(for='secondUnit') Unit Two:
+        input#email.form-control(type='number', value=user.secondUnit name='secondUnit')
+      button.btn.btn-primary(type='submit') Modify User Info
+      a(href='./delete/' + user._id) Delete Record

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h4 MyUsers
+
+  .row
+    each user in users
+     .col-sm-4
+       p User:  #{user.username}
+       p Unit One Result: #{user.firstUnit}
+       p Unit Two Result: #{user.secondUnit}
+       p Created: #{user.createdAt} | Updated: #{user.updatedAt}
+       a(href='/users/' + user._id)  User Info
+  include newuser

@@ -1,0 +1,37 @@
+{
+  "name": "expressasig",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start-dev": "nodemon --inspect bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-session": "0.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.0",
+    "http-errors": "~1.6.3",
+    "log-util": "^2.3.0",
+    "mongoose": "^5.9.7",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "pug": "^2.0.0-beta11"
+  },
+  "main": "app.js",
+  "author": "Scott",
+  "license": "ISC",
+  "description": "The description of this assignment can be found in Canvas at [Assignment #3](https://canvas.harvard.edu/courses/54354/assignments/249112) (Spring 2019)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tautona/assignment-3-tautona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tautona/assignment-3-tautona/issues"
+  },
+  "homepage": "https://github.com/tautona/assignment-3-tautona#readme",
+  "devDependencies": {}
+}
